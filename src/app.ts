@@ -196,17 +196,10 @@ class ProjectList extends Component<HTMLDivElement, HTMLElement> {
     }
 
     private renderProjects() {
-        //const listElement = document.getElementById(`${this.type}-projects-list`)! as HTMLUListElement;
-        //listElement.innerHTML = '';
         for (const projectItem of this.assignedProjects) {
             console.log(this.element.querySelector('ul')!.id);
             new ProjectItem(this.element.querySelector('ul')!.id, projectItem); 
         } 
-        // for (const projectItem of this.assignedProjects) {
-        //     const listItem = document.createElement('li');
-        //     listItem.textContent = projectItem.title;
-        //     listElement.appendChild(listItem);
-        // }
     }
 }
 
