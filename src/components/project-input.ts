@@ -1,6 +1,6 @@
 import { Component } from './base-component.js';
 import * as Validation from '../util/validation.js';
-import { projectState } from '../state/project.js'
+import { projectState } from '../state/project-state.js'
 import { autobind } from '../decorators/autobind.js';
 
 export default class ProjectInput extends Component<HTMLDivElement, HTMLFormElement> {
